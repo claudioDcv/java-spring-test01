@@ -1,0 +1,4 @@
+<form action="#" th:action="@{/product}" th:object="${product}" method="post">
+    <p>Message: <input type="text" th:field="*{title}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>

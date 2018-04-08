@@ -1,0 +1,15 @@
+<a href="/product">Create</a>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="prod: ${listProduct}">
+      <td th:text="${prod.id}"></td>
+      <td th:text="${prod.title}"></td>
+    </tr>
+  </tbody>
+</table>
